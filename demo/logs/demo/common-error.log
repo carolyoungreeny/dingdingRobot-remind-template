@@ -1,0 +1,924 @@
+2021-01-22 16:15:40,377 ERROR 7820 [-/127.0.0.1/-/19ms GET /] nodejs.ReferenceError: parans is not defined
+    at permission (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\app\middleware\permission.js:7:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\koa-static-cache\index.js:41:56
+
+pid: 7820
+hostname: DESKTOP-QUCFVJU
+
+2021-01-22 16:15:54,838 ERROR 7820 [-/127.0.0.1/-/111ms GET /] nodejs.ReferenceError: parans is not defined
+    at permission (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\app\middleware\permission.js:7:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\Users\98532\Desktop\ali hw\Egg.js实践开发作业\demo\node_modules\koa-static-cache\index.js:41:56
+
+pid: 7820
+hostname: DESKTOP-QUCFVJU
+
+2021-01-30 13:05:26,595 ERROR 24468 [-/127.0.0.1/-/24ms GET /getUserPhone] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'desc' in 'order clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone`, `m_name` FROM `t_classmember` WHERE `m_id` IN (1, 2) ORDER BY `m_id`, `desc`
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'desc' in 'order clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT `m_phone`, `m_name` FROM `t_classmember` WHERE `m_id` IN (1, 2) ORDER BY `m_id`, `desc`"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 24468
+hostname: DESKTOP-QUCFVJU
+
+2021-01-30 13:05:45,378 ERROR 24468 [-/127.0.0.1/-/8ms GET /getUserPhone] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'desc' in 'order clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone`, `m_name` FROM `t_classmember` WHERE `m_id` IN (1, 2) ORDER BY `m_id`, `desc`
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'desc' in 'order clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT `m_phone`, `m_name` FROM `t_classmember` WHERE `m_id` IN (1, 2) ORDER BY `m_id`, `desc`"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 24468
+hostname: DESKTOP-QUCFVJU
+
+2021-01-30 13:05:47,178 ERROR 11080 [-/127.0.0.1/-/19ms GET /getUserPhone] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'desc' in 'order clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_id`, `m_phone`, `m_name` FROM `t_classmember` WHERE `m_id` IN (1, 2) ORDER BY `m_id`, `desc`
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'desc' in 'order clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT `m_id`, `m_phone`, `m_name` FROM `t_classmember` WHERE `m_id` IN (1, 2) ORDER BY `m_id`, `desc`"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 11080
+hostname: DESKTOP-QUCFVJU
+
+2021-01-30 13:08:02,079 ERROR 17304 [-/127.0.0.1/-/19ms GET /getUserPhone] nodejs.TypeError: Cannot read property '0' of undefined
+    at UserController.info (C:\Users\98532\Desktop\ali hw\final\demo\app\controller\user.js:11:24)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async permission (C:\Users\98532\Desktop\ali hw\final\demo\app\middleware\permission.js:3:5)
+    at async C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\koa-bodyparser\index.js:95:5)
+
+pid: 17304
+hostname: DESKTOP-QUCFVJU
+
+2021-01-30 13:34:22,642 ERROR 25088 [Job#16119848626065851339715139001] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 29ms. TypeError: data is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:34:32,624 ERROR 25088 [Job#16119848726105851439748130002] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 13ms. TypeError: data is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:34:42,630 ERROR 25088 [Job#16119848826115851539761709993] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 16ms. TypeError: data is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:34:52,629 ERROR 25088 [Job#16119848926135851639783362004] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 16ms. TypeError: data is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:35:02,617 ERROR 25088 [Job#16119849026135851739786168995] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. TypeError: data is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:35:12,638 ERROR 9288 [Job#16119849126135851839788858006] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 22ms. TypeError: data is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:35:42,632 ERROR 10540 [Job#16119849426175852139828561009] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. ReferenceError: ids is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:25:41)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:35:52,627 ERROR 28248 [Job#161198495262358522398807540010] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. ReferenceError: ids is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:25:41)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:36:02,631 ERROR 28444 [Job#161198496262458523398923970011] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:53:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:36:12,632 ERROR 28444 [Job#161198497262558524399039290012] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:53:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:36:22,631 ERROR 28444 [Job#161198498263058525399457270013] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:53:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:36:32,639 ERROR 28444 [Job#161198499263058526399508110014] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 5ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:53:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:37:02,643 ERROR 15388 [Job#1611985022638585294302200017] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:53:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:37:12,640 ERROR 15388 [Job#1611985032639585304394030018] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:53:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:37:22,647 ERROR 19104 [Job#1611985042640585314505990019] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:53:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:37:32,648 ERROR 17248 [Job#1611985052641585324631480020] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:37:42,644 ERROR 17248 [Job#1611985062643585334756800021] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:37:52,645 ERROR 17248 [Job#1611985072643585344786780022] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:38:02,645 ERROR 17248 [Job#1611985082644585354903160023] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:38:12,647 ERROR 17248 [Job#16119850926455853641035020024] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:38:22,649 ERROR 17248 [Job#16119851026475853741185170025] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:38:32,654 ERROR 17248 [Job#16119851126495853841394440026] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:38:42,652 ERROR 17248 [Job#16119851226505853941513400027] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:38:52,653 ERROR 17248 [Job#16119851326525854041652290028] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:39:02,653 ERROR 17248 [Job#16119851426525854141652870029] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:39:12,654 ERROR 17248 [Job#16119851526535854241776160030] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:39:22,655 ERROR 17248 [Job#16119851626545854341845779931] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: pdata is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:54:16)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:39:32,658 ERROR 26660 [Job#16119851726555854441992370032] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:49:40)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:39:42,675 ERROR 2644 [Job#16119851826565854542085929933] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 17ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:49:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:40:02,708 ERROR 24320 [Job#16119852026885854745324690035] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 17ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:49:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:40:12,708 ERROR 25916 [Job#16119852126895854845360220036] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 17ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:40:22,695 ERROR 25916 [Job#16119852226895854945376330037] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 5ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:40:32,694 ERROR 25916 [Job#16119852326895855045400660038] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:40:42,734 ERROR 2684 [Job#16119852426915855145574719939] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 40ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:40:52,707 ERROR 2684 [Job#16119852526955855245976530040] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 11ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:41:02,704 ERROR 2684 [Job#16119852626985855346274350041] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 5ms. ReferenceError: pdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:41:12,726 ERROR 16028 [Job#16119852726995855446401510042] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 25ms. TypeError: getPhones is not a function or its return value is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:41:22,704 ERROR 16028 [Job#16119852827005855546531350043] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. TypeError: getPhones is not a function or its return value is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:41:32,704 ERROR 16028 [Job#16119852927015855646564530044] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. TypeError: getPhones is not a function or its return value is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:41:42,717 ERROR 23732 [Job#16119853027015855746584630045] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 15ms. TypeError: getPhones is not a function or its return value is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:41:52,708 ERROR 23732 [Job#16119853127015855846616820046] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 6ms. TypeError: getPhones is not a function or its return value is not iterable
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:42:02,758 ERROR 28368 [Job#16119853227015855946627330047] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 55ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:33:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:42:12,714 ERROR 28368 [Job#16119853327025856046663100048] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 12ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:33:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:42:22,706 ERROR 28368 [Job#16119853427025856146685010049] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:33:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:42:32,707 ERROR 28368 [Job#16119853527035856246801220050] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:33:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:42:42,709 ERROR 28368 [Job#16119853627035856346829280051] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 5ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:33:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:42:52,711 ERROR 28368 [Job#16119853727045856446869570052] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 6ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:33:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:50:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:43:12,723 ERROR 16520 [Job#16119853927055856647009530054] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 17ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:35:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:43:22,713 ERROR 16520 [Job#16119854027055856747028390055] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 7ms. TypeError: data.forEach is not a function
+    at getPhones (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:35:12)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:52:36)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:45:53,019 ERROR 19860 [Job#16119855530085858243735167005] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. ReferenceError: ids is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:26:41)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 13:54:07,166 ERROR 19548 [Job#161198604714858631851287949929] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 14ms. TypeError: undefined is not a function
+    at Array.map (<anonymous>)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:52)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:54:17,169 ERROR 19548 [Job#161198605714858632851319400030] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 17ms. TypeError: undefined is not a function
+    at Array.map (<anonymous>)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:52)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:54:27,166 ERROR 19600 [Job#161198606715258633851726759931] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 13ms. ReferenceError: obj is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:56)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:54:37,160 ERROR 19600 [Job#161198607715558634852038409932] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 5ms. ReferenceError: obj is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:55:56)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:57:53,110 ERROR 20616 [Job#16119862731025865444670271991] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 6ms. TypeError: ctx.logger.info is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:26:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 13:58:03,108 ERROR 20616 [Job#16119862831055865544696137002] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. TypeError: ctx.logger.info is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:26:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:14:19,407 ERROR 28420 [Job#16119872581855875295503729001] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1218ms. TypeError: ctx.logger.info is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:60:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:28:33,996 ERROR 14624 [Job#16119881139855883853504147007] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 7ms. ReferenceError: picrul is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:46:125)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:32:36,215 ERROR 22124 [Job#16119883562095886275741369009] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 4ms. ReferenceError: Rdata is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:42:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:32:56,220 ERROR 27924 [Job#161198837621358864757767820011] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 5ms. ReferenceError: Cannot access 'getPhones' before initialization
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:35:14)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:33:06,233 ERROR 27924 [Job#161198838621558865758064150012] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 8ms. ReferenceError: Cannot access 'getPhones' before initialization
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:35:14)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:33:16,236 ERROR 9996 [Job#161198839622658866759205859913] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 6ms. ReferenceError: getPhones is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:33:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:34:24,655 ERROR 19716 [Job#1611988464649588736148015001] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. ReferenceError: title is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:38:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 14:34:34,655 ERROR 19716 [Job#1611988474651588746163480992] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. ReferenceError: title is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:38:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-01-30 16:08:23,915 ERROR 11440 [Job#16119941039045943752698018001] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. ReferenceError: modles is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:31:17)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:08:33,911 ERROR 11440 [Job#16119941139085943852739947992] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. ReferenceError: modles is not defined
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:31:17)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:12:38,583 ERROR 27964 [Job#16119943585755946299412651991] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:12:48,580 ERROR 27964 [Job#16119943685795946399445414002] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:12:58,581 ERROR 27964 [Job#16119943785805946499457654003] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:13:08,583 ERROR 27964 [Job#16119943885825946599472545004] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:13:18,584 ERROR 27964 [Job#16119943985835946699486936005] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:13:28,591 ERROR 20200 [Job#16119944085865946799515422006] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:13:38,588 ERROR 20200 [Job#16119944185875946899517329007] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:13:48,589 ERROR 20200 [Job#16119944285885946999531266008] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:13:58,592 ERROR 9000 [Job#16119944385895947099542273009] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:14:08,593 ERROR 9000 [Job#161199444859159471995562660010] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:14:18,594 ERROR 9000 [Job#161199445859259472995690000011] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:14:28,596 ERROR 9000 [Job#161199446859459473995948330012] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:6:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:14:58,607 ERROR 10680 [Job#161199449860459476996976850015] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:5:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:15:08,607 ERROR 11140 [Job#161199450860559477996994789916] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: this.app.mysql.select is not a function
+    at UserService.find (C:\Users\98532\Desktop\ali hw\final\demo\app\service\user.js:5:42)
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:34:44)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:29:24,780 ERROR 27956 [Job#16119953647565956361223183001] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 19ms. Error: ER_BAD_FIELD_ERROR: Unknown column '0' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}' {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column '0' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}'"
+}
+2021-01-30 16:29:34,771 ERROR 27956 [Job#16119953747595956461248902002] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 10ms. Error: ER_BAD_FIELD_ERROR: Unknown column '0' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}' {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column '0' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}'"
+}
+2021-01-30 16:29:44,766 ERROR 27956 [Job#16119953847605956561260528003] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. Error: ER_BAD_FIELD_ERROR: Unknown column '0' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}' {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column '0' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}'"
+}
+2021-01-30 16:29:54,765 ERROR 27956 [Job#16119953947625956661282298004] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. Error: ER_BAD_FIELD_ERROR: Unknown column '0' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}' {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column '0' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}'"
+}
+2021-01-30 16:30:04,766 ERROR 27956 [Job#16119954047645956761294405995] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. Error: ER_BAD_FIELD_ERROR: Unknown column '0' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}' {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column '0' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}'"
+}
+2021-01-30 16:30:14,769 ERROR 27956 [Job#16119954147655956861306650006] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. Error: ER_BAD_FIELD_ERROR: Unknown column '0' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}' {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column '0' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}'"
+}
+2021-01-30 16:30:24,770 ERROR 27956 [Job#16119954247665956961320556007] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. Error: ER_BAD_FIELD_ERROR: Unknown column '0' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:310:20)
+    at addChunk (_stream_readable.js:286:12)
+    --------------------
+    at Pool.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:65:19)
+    at C:\Users\98532\Desktop\ali hw\final\demo\node_modules\co\index.js:54:5
+    sql: SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}' {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column '0' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT `m_phone` FROM `t_classmember` WHERE `0` = ' ' AND `1` = '{' AND `2` = ' ' AND `3` = 'm' AND `4` = '_' AND `5` = 'i' AND `6` = 'd' AND `7` = ' ' AND `8` = ' ' AND `9` = ':' AND `10` = ' ' AND `11` = '1' AND `12` = ',' AND `13` = '3' AND `14` = ' ' AND `15` = '}'"
+}
+2021-01-30 16:43:02,105 ERROR 29460 [Job#16119961820815964534467989001] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 3ms. TypeError: nowDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:18)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:43:22,106 ERROR 27276 [Job#16119962020925964734576569993] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: nowDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:18)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:43:32,095 ERROR 27276 [Job#16119962120935964834587166004] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: nowDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:18)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:43:42,095 ERROR 27276 [Job#16119962220935964934589485005] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: nowDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:18)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:43:52,096 ERROR 27276 [Job#16119962320955965034602283006] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: nowDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:18)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:44:02,130 ERROR 6884 [Job#16119962421205965134851991007] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 2ms. TypeError: nowDate.getNowFormatDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:26)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:44:12,124 ERROR 6884 [Job#16119962521205965234856884008] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 1ms. TypeError: nowDate.getNowFormatDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:26)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-01-30 16:44:22,122 ERROR 6884 [Job#16119962621215965334868861009] C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js execute failed, used 0ms. TypeError: nowDate.getNowFormatDate is not a function
+    at Activity.subscribe (C:\Users\98532\Desktop\ali hw\final\demo\app\schedule\activity.js:56:26)
+    at Object.task (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\lib\load_schedule.js:37:22)
+    at Messenger.<anonymous> (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg-schedule\app.js:47:21)
+    at Messenger.emit (events.js:310:20)
+    at Messenger._onMessage (C:\Users\98532\Desktop\ali hw\final\demo\node_modules\egg\lib\core\messenger\ipc.js:116:12)
+    at process.emit (events.js:322:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
